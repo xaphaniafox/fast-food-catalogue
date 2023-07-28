@@ -1,0 +1,23 @@
+@media screen and (min-width: 500px){
+  .card-body {
+    grid-auto-rows: 70px;
+  }
+}
+@media screen and (min-width: 670px){
+  .card-body {
+    grid-auto-rows: 60px;
+  }
+}
+@media screen and (min-width: 768px){
+  .card-body {
+    grid-auto-rows: 70px;
+  }
+}
+@media screen and (min-width: 925px){
+  .card-body {
+    grid-auto-rows: 60px;
+  }
+}
+.card-body, .card-container {
+  display: grid;
+}
