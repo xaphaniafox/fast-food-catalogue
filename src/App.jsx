@@ -23,6 +23,10 @@ function App() {
     fetchData();
   }, []);
 
+  const filterItems = (categoryId) => {
+    fetchData(categoryId);
+  };
+
   const renderContent = () => {
     if (loading) {
       return <Loading theme="dark" />;
@@ -34,7 +38,7 @@ function App() {
     <>
       <div className="wrapper bg-faded-dark">
         <Header />
-        <CategoryList />
+        <CategoryList filterItems={filterItems} />
         <div className="container mt-4">{renderContent()}</div>
       </div>
     </>
