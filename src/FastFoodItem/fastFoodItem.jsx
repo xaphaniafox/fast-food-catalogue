@@ -2,10 +2,13 @@ import React from "react";
 import { TiShoppingCart } from "react-icons/ti";
 import "./fastFoodItem.css";
 
-const FastFoodItem = ({ name, price, ingredients, imageUrl }) => {
+const FastFoodItem = ({ name, price, ingredients, imageUrl, delay }) => {
   return (
     <div>
-      <div className="card-container card product-card h-100 border-0 shadow-sm pb-1">
+      <div
+        className="card product-card h-100 border-0 shadow-sm pb-1 fade-in-horiz"
+        style={{ animationDelay: delay + "s" }}
+      >
         <span className="badge badge-end badge-shadow bg-success fs-md fw-medium">
           قیمت: {price.toLocaleString()} تومان
         </span>
