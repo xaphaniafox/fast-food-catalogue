@@ -27,6 +27,14 @@ function App() {
     fetchData(categoryId);
   };
 
+  const searchItems = async (term) => {
+    setLoading(true);
+    const response = await axios.get(
+      `/FastFood/search${term ? "?term=" + term : ""}`
+    );
+    setLoading(false);
+  };
+
   const renderContent = () => {
     if (loading) {
       return <Loading theme="dark" />;

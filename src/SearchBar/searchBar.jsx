@@ -18,7 +18,7 @@ const SearchBar = () => {
         <input
           className="form-control rounded-end pe-5 border-success"
           type="text"
-          placeholder="جستجوی فست فود"
+          placeholder="جستجوی فست فود ..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />

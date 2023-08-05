@@ -1,4 +1,3 @@
-import React from "react";
 import FastFoodItem from "../FastFoodItem/fastFoodItem";
 
 const FastFoodList = ({ fastFoodItems }) => {
