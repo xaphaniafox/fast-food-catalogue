@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 // axios.defaults.baseURL =
 //   "https://react-mini-projects-api.classbon.com/FastFood/";
 const instance = axios.create({
-  baseURL: "https://react-mini-projects-api.classbon.com",
+  baseURL:
+    "https://cors-anywhere.herokuapp.com/https://react-mini-projects-api.classbon.com",
 });
 
 const useAxios = (axiosParams) => {
